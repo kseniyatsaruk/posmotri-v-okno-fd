@@ -72,6 +72,7 @@ ol {
   align-items: end;
   gap: 30px;
   min-width: 1140px;
+  padding-bottom: 10px;
 }
 
 .result {
