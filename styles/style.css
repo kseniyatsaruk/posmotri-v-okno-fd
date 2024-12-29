@@ -18,7 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
-  height: 800px;
+  align-items: center;
 }
 
 h1,
@@ -95,7 +95,6 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   gap: 40px;
-  height: 54px;
 }
 
 .search-form__fieldset {
@@ -115,15 +114,16 @@ ol {
   display: flex;
   flex-direction: row;
   width: fit-content;
+  align-items: center;
 }
 
 .search-form__textfield {
   min-width: 225px;
   border-width: 1px 0 1px 0;
   border-style: solid;
-  border-color: #fff;
+  border-color: inherit;
   padding: 2px;
-  color: #fff;
+  color: inherit;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -178,7 +178,6 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21.6px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -299,17 +298,16 @@ ol {
   font-weight: 400;
   font-size: 18px;
   background-color: transparent;
+  padding: 4px 0px;
 }
 
 .search-form__submit-button {
   width: 50%;
   align-self: end;
-  height: 34px;
 }
 
 .more-button {
   width: calc(100% - 4px);
-  height: 34px;
   margin: 30px 2px 2px;
 }
 
@@ -320,6 +318,10 @@ ol {
 .button:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:focus-visible {
