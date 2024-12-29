@@ -9,15 +9,16 @@ html {
 }
 
 .page {
-  display: flex;
-  justify-content: center;
-  height: 800px;
+  inline-size: 1200px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  inline-size: 1200px;
+  display: flex;
+  justify-content: center;
+  height: 800px;
 }
 
 h1,
